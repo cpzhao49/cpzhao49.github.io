@@ -1,0 +1,38 @@
+
+window.onload=function date(){
+    var date = new Date();
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    var day = date.getDate();
+    document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+}
+
+function submitForm(){
+    alert("Submitted");
+}
+function toContact(){
+    window.scrollTo({ top: 1000, behavior: 'smooth' });
+}
+function validate(){
+    var input = document.getElementById("postal").value;
+    console.log(input);
+    var regex = new RegExp(/^[ABCEGHJKLMNPRSTVXY]\d[ABCEGHJKLMNPRSTVXY][ -]?\d[ABCEGHJKLMNPRSTVXY]\d$/i);
+    var result = regex .test(input);
+    if(result === true){
+        alert("Thank you for submitting!");
+        submit();       
+    } else {
+        alert("Wrong postal code");
+    }
+}
+function submit(){
+    var http = new XMLHttpRequest();
+    var form  = new FormData();
+    var inputs = document.getElementsByClassName("forminput");
+    for(let i = 0; i<inputs.length;i++){
+        console.log(inputs[i].value);
+        form.append(i,inputs[i].value);
+    }   
+    http.open( 'POST', 'https://httpbin.org/post ' );   
+    http.send(form);
+}
