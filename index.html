@@ -4,9 +4,342 @@
         <meta charset="UTF-8" />
         <title>WEB222 FINAL ASSESSMENT</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://raw.githubusercontent.com/cpzhao49/cpzhao49.github.io/main/style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
-    <script src="https://raw.githubusercontent.com/cpzhao49/cpzhao49.github.io/main/script.html">
+    <style>
+* {
+    align-content: center;
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+    max-width: 1024px;
+}
+body {
+    background: #f1efef;
+    font-family: "Montserrat", sans-serif;
+    margin-right: auto;
+    margin-left: auto;    
+} 
+h1{
+    font-family:monospace,monospace;
+}
+
+div{
+    font-family:monospace,monospace;
+}
+
+.Title{
+    color: #718daa;
+    font-family: Arial;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e2dada;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #34495e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #718daa;
+  }
+
+  .navbar{ 
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    margin: 0 auto;
+    border: #34495e;
+    text-align: center;
+    overflow: hidden;
+  }
+  .bar{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+  }
+  .navbar_left{
+      float: left;
+  }
+.navbar_right{
+    float:right;
+}
+.PersonalInformation{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.PersonalInformation div{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.PersonalInformation img{
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200;
+    background-color: powderblue;
+}
+.PersonalInformation .text{
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #718daa;
+    font-family: serif;
+}
+.PersonalInformation h1{
+    font-family: serif;
+}
+.PersonalInformation .button1{
+    background-color: #555555; 
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px
+}
+.PersonalInformation .button2{
+    background-color:#48b8de; 
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px
+}
+.PersonalInformation .buttons{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}
+.AboutMe{
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+   
+    width: 90%;
+    height: 600px;
+    border-width:2px;
+}
+.AboutMe .left{
+    display: block;
+    float: left;
+    text-align: left;
+    font-size: 20;
+    height:100px;
+    width: 50%; 
+    padding: 10px;    
+}
+.AboutMe .left .title{
+    text-align: center;
+    font-size: 10;
+}
+.AboutMe .left .Statement{
+    padding: 50px;
+    height:100px;
+    width: 100px; 
+}
+.AboutMe .right{
+    display: block;
+    float: right;
+    text-align: left;
+    height:100px;
+    width: 40%;
+    margin:10px;
+}
+.Education {
+    margin-right: auto;
+    margin-left: auto; 
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+   height:100px;
+   width: 600px;
+}
+.Education .left{
+    float: left;
+    text-align: left;
+    height:100px;
+    width: 300px;
+    margin:10px;
+}
+.Education .right{
+    
+    float: left;
+    text-align: left;
+    height:100px;
+    width: 200px;
+    margin:10px;
+}
+.ContactMe{    
+    
+    text-align: center;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;      
+}
+.ContactMe input[type=text], select {
+   
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.ContactMe button{
+      background-color: #2ea44f;
+      border: 1px solid rgba(27, 31, 35, .15);
+      border-radius: 6px;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      padding: 6px 16px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;  
+}
+.ContactMe .submit{
+    text-align: center;
+}
+.ContactMe .buttons{
+    justify-content: center;
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;  
+
+}
+.ContactMe .buttons button{
+    position: absolute;
+    top: 50%; 
+}
+.ContactMe .Title{
+    text-align: center;
+    font-size: 27;
+}
+
+.Honesty_Statement{
+    text-align:center;
+    border:#e2dada;
+    border-width:2px;
+    border-style:solid;
+}
+
+.footer{
+    text-align:center;
+    color: #34495e;
+    background-color: #e2dada;
+    padding: 10px;
+}
+@media only screen and (max-width: 400px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+    .AboutMe{
+        text-align: center;
+        margin: 50px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;       
+        width: 90%;
+        height: 900px;
+        border-width:2px;
+    }
+    .Education {
+        margin-right: auto;
+        margin-left: auto; 
+        text-align: center;
+        border: 1px solid #ccc;
+        padding: 10px;
+       height:250px;
+       width: 300px;
+    }
+    .Education .left{
+        float: left;
+        text-align: left;
+        height:100px;
+        width: 200px;
+        margin:10px;
+    }
+    .Education .right{    
+        float: left;
+        text-align: left;
+        height:100px;
+        width: 200px;
+        margin:10px;
+    }
+
+  }
+    </style>
+    <script>
+        
+window.onload=function date(){
+    var date = new Date();
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    var day = date.getDate();
+    document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+}
+
+function submitForm(){
+    alert("Submitted");
+}
+function toContact(){
+    window.scrollTo({ top: 1000, behavior: 'smooth' });
+}
+function validate(){
+    var input = document.getElementById("postal").value;
+    console.log(input);
+    var regex = new RegExp(/^[ABCEGHJKLMNPRSTVXY]\d[ABCEGHJKLMNPRSTVXY][ -]?\d[ABCEGHJKLMNPRSTVXY]\d$/i);
+    var result = regex .test(input);
+    if(result === true){
+        alert("Thank you for submitting!");
+        submit();       
+    } else {
+        alert("Wrong postal code");
+    }
+}
+function submit(){
+    var http = new XMLHttpRequest();
+    var form  = new FormData();
+    var inputs = document.getElementsByClassName("forminput");
+    for(let i = 0; i<inputs.length;i++){
+        console.log(inputs[i].value);
+        form.append(i,inputs[i].value);
+    }   
+    http.open( 'POST', 'https://httpbin.org/post ' );   
+    http.send(form);
+}
     </script>
     <body>
     <nav class="navbar">            
@@ -28,13 +361,13 @@
 
     <section class = "PersonalInformation" id ="PersonalInformation">
     <div>
-        <img src="https://raw.githubusercontent.com/cpzhao49/web222/main/Cat.jpeg?token=GHSAT0AAAAAABQS7WRF7HCRK6CF4MXI62YEYSXA2XQ"><br>
+        <img src="Cat.jpeg"><br>
         <div class = "text">
             <h1 class = >Chongpu Zhao</h1><br>
             <h3 class = >A Programmer</h3><br><br>         
         </div>
         <div class="buttons">
-            <button class="button1" ahref="" download></a>Resume</button>
+            <button class="button1"><a href="https://raw.githubusercontent.com/cpzhao49/cpzhao49.github.io/main/index.html" download="fakeresume" style="color: aliceblue; text-decoration: none;">Resume</a></button>
             <button class="button2" onclick="toContact();">Contact Me</button>
         </div>
     </div>   
@@ -50,10 +383,10 @@
         </div>
         <div class="right"><br>
             <p class="title"><b>Basic Information</b></p><br>
-            <p><b>Name:</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Chongpu Zhao</p><br>
+            <p><b>Name:</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Chongpu Zhao</p><br>
             <p><b>Course code:</b>&emsp;&emsp;&emsp;&emsp;&emsp;WEB222</p><br>
-            <p><b>Instructor:</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Alireza Moghaddam</p><br>
-            <p><b>Course section:</b>&emsp;&emsp;NFF</p><br>
+            <p><b>Instructor:</b>&emsp;&emsp;&emsp;&emsp;&emsp;Alireza Moghaddam</p><br>
+            <p><b>Course section:</b>&emsp;&emsp;&emsp;NFF</p><br>
         </div>
     </div><br><br><br>
 
@@ -74,7 +407,7 @@
     
 
     <section class="ContactMe" id="Contact" >
-        <br><br>
+        <br><br><br><br>
         <div class="Title">Contact ME</div>
         <br>
          <form>  
