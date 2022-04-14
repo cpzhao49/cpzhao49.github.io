@@ -67,6 +67,8 @@ ul {
     float:right;
 }
 .PersonalInformation{
+    text-decoration: none;
+    color: white;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -128,17 +130,19 @@ ul {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    height: 400px;
+   
     width: 90%;
+    height: 600px;
     border-width:2px;
 }
 .AboutMe .left{
+    display: block;
     float: left;
     text-align: left;
     font-size: 20;
     height:100px;
-    width: 450px; 
-    padding: 30px;    
+    width: 50%; 
+    padding: 10px;    
 }
 .AboutMe .left .title{
     text-align: center;
@@ -150,10 +154,11 @@ ul {
     width: 100px; 
 }
 .AboutMe .right{
+    display: block;
     float: right;
     text-align: left;
     height:100px;
-    width: 300px;
+    width: 40%;
     margin:10px;
 }
 .Education {
@@ -173,6 +178,7 @@ ul {
     margin:10px;
 }
 .Education .right{
+    
     float: left;
     text-align: left;
     height:100px;
@@ -180,12 +186,14 @@ ul {
     margin:10px;
 }
 .ContactMe{    
-      display: table;
-      margin-right: auto;
-      margin-left: auto;
-      
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto; 
+    width: 400px;     
 }
 .ContactMe input[type=text], select {
+   
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -244,3 +252,49 @@ ul {
     background-color: #e2dada;
     padding: 10px;
 }
+@media only screen and (max-width: 400px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+    .AboutMe{
+        text-align: center;
+        margin: 50px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;       
+        width: 90%;
+        height: 900px;
+        border-width:2px;
+    }
+    .ContactMe{    
+        text-align: center;
+        display: block;
+        margin-right: auto;
+        margin-left: auto; 
+        width: 300px;     
+    }
+    .Education {
+        margin-right: auto;
+        margin-left: auto; 
+        text-align: center;
+        border: 1px solid #ccc;
+        padding: 10px;
+       height:250px;
+       width: 300px;
+    }
+    .Education .left{
+        float: left;
+        text-align: left;
+        height:100px;
+        width: 200px;
+        margin:10px;
+    }
+    .Education .right{    
+        float: left;
+        text-align: left;
+        height:100px;
+        width: 200px;
+        margin:10px;
+    }
+
+  }
